@@ -1,8 +1,7 @@
-def scrape_site(url):
-    print(url)
-    return
+import scrape
 
-#entrypoint of the program
+
+# entrypoint of the program
 url = "https://en.wikipedia.org/wiki/HNews"
-scrape_site(url)
-
+html_src = scrape.get_html_as_string(url)
+print(html_src)
